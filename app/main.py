@@ -1,11 +1,11 @@
-from fastapi import Depends, FastAPI
+from fastapi import FastAPI
 
-from .routers import rpn
+from .routers import queries
 
 app = FastAPI()
 
 
-app.include_router(rpn.router)
+app.include_router(queries.router)
 
 
 @app.get("/")

@@ -1,0 +1,10 @@
+FROM python:3.12-bookworm
+
+COPY Docker/entrypoint.sh /entrypoint.sh
+COPY .. /nipohc_app
+RUN chmod 755 /entrypoint.sh
+
+EXPOSE 80
+
+CMD ["uvicorn", "app.main:app",  "--host", "0.0.0.0", "--port", "80"]
+ENTRYPOINT ["/entrypoint.sh"]
