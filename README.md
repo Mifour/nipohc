@@ -19,10 +19,10 @@ Go to http://0.0.0.0:8000/ to see a welcome message.
 ### Querying
 You can input queries by typing them from your browser as path param: I.E. http://0.0.0.0:8000/query/?input_str=1_7_%2B
 Special characters can be escaped like so:
-- * is %2A
-- + is %2B
-- - is %2D
-- / is %2F  
+- "*" is %2A
+- "+" is %2B
+- "-" is %2D
+- "/" is %2F  
 see more at https://www.w3schools.com/tags/ref_urlencode.asp  
 
 Or you can query the API like so  
